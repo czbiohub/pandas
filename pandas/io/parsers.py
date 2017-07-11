@@ -76,7 +76,8 @@ delim_whitespace : boolean, default False
 header : int or list of ints, default 'infer'
     Row number(s) to use as the column names, and the start of the data.
     Default behavior is as if set to 0 if no ``names`` passed, otherwise
-    ``None``. Explicitly pass ``header=0`` to be able to replace existing
+    ``None`` (which turns off header). 
+    Explicitly pass ``header=0`` to be able to replace existing
     names. The header can be a list of integers that specify row locations for
     a multi-index on the columns e.g. [0,1,3]. Intervening rows that are not
     specified will be skipped (e.g. 2 in this example is skipped). Note that
